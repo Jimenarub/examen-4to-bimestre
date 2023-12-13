@@ -1,0 +1,93 @@
+body{
+    margin :0px;
+    padding: 0px;
+    --fondo-okis:linear-gradient(45deg,#ff9f8e,#23ffbd);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: var(--fondo-okis);
+}
+.main-conteiner{
+    width: 100%;
+    height: 100vh;
+    background-image: var(--fondo-okis);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card-conteiner{
+    width: 100rem;
+    height: 50rem;
+    overflow: hidden;
+    border-radius:50% ;
+    border:solid 20px #000000;
+    transition: all 2s ;
+    transform: rotate(360deg);
+    animation-name: okis;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-timing-function: linear;
+}
+
+.card-image{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: all 2;
+        overflow: hidden;
+    }
+.button{
+    width: 350px;
+    height: 80px;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#pause-btn
+{
+    width: 60px;
+    height: 60px;
+    color: black;
+    border-radius: 50%;
+    background-image: url("../img/buton\ play.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+#play-btn
+{
+    width: 60px;
+    height: 60px;
+    color: black;
+    border-radius: 50%;
+    background-image: url("../img/buton\ pause.jpg");
+    background-repeat: no-repeat;
+    background-size: cover; 
+}
+#pause-btn:hover
+{
+    width: 70px;
+    height: 70px;  
+}
+#play-btn:hover
+{
+    width: 70px;
+    height: 70px;    
+}
+
+
+    @keyframes fondo-okis{
+        from{
+            background-color: linear-gradient(blueviolet,rgh(2,50,50));
+        }
+       to{
+        background-image: linear-gradient(rgb(188,0,255),rgb(246,255,0));
+        border: solid 10px rgb(0, 0, 0);
+        transform: rotate(360deg)
+       }
+    }
+    
